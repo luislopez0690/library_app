@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-dark">
+  {{#link-to 'index' class="navbar-brand"}}Library App{{/link-to}}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        {{#link-to 'index' tagName="li"}}<a href>Home</a>{{/link-to}}
+        {{#link-to 'libraries' tagName="li"}}<a href="">Libraries</a>{{/link-to}}
+        {{#link-to 'about' tagName="li"}}<a href>About</a>{{/link-to}}
+        {{#link-to 'contact' tagName="li"}}<a href>Contact</a>{{/link-to}}
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {{#link-to 'admin.invitations' tagName="dropdown-item"}}<a href="">Invitations</a>{{/link-to}}
+        <div class="dropdown-divider"></div>
+        {{#link-to 'admin.contacts' tagName="dropdown-item"}}<a href="">Contacts</a>{{/link-to}}
+         </div>
+         </li> 
+    </ul>
+  </div>
+</nav>

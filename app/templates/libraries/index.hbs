@@ -1,4 +1,4 @@
-<!-- app/templates/libraries/index.hbs -->
+<<!-- app/templates/libraries/index.hbs -->
 <h2>List</h2>
 <div class="row">
   {{#each model as |library|}}
@@ -12,7 +12,7 @@
           <p>Phone: {{library.phone}}</p>
         </div>
         <div class="panel-footer text-right">
-          {{#link-to 'libraries.edit' library.id class='btn btn-success btn-xs' }}Edit{{/link-to}}
+          {{#link-to 'libraries.edit' library.id class='btn btn-success btn-xs'}}Edit{{/link-to}}
           <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' library}}>Delete</button>
         </div>
       </div>
